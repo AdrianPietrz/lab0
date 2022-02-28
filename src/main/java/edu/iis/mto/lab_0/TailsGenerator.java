@@ -10,7 +10,7 @@ public class TailsGenerator {
         String temp =value;
         for(int i=0;i<value.length();i++){
             list.add(temp);
-            temp=temp.substring(0,temp.length()-1);
+            temp=value.substring(i+1,value.length());
         }
         list.add("");
         return list;
